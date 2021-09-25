@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="vardhan_adithya_C3_Project" />
         <module name="Restaurant_project -Student version" />
         <module name="Restaurant_project" />
       </profile>

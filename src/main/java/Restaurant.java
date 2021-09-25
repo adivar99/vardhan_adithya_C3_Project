@@ -65,4 +65,7 @@ public class Restaurant {
         return name;
     }
 
+    public Integer findTotal(List<String> items) {
+        return null;
+    }
 }
