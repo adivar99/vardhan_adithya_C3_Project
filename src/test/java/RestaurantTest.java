@@ -37,9 +37,9 @@ class RestaurantTest {
     public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
         //WRITE UNIT TEST CASE HERE
         Restaurant spiedRestaurant = Mockito.spy(restaurant);
-        Mockito.when(spiedRestaurant.getCurrentTime()).thenReturn(LocalTime.parse("11:00:00"));
+        Mockito.when(spiedRestaurant.getCurrentTime()).thenReturn(LocalTime.parse("09:00:00"));
         boolean open = spiedRestaurant.isRestaurantOpen();
-        assertTrue(open);
+        assertFalse(open);
     }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
