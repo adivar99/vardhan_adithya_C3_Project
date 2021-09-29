@@ -29,8 +29,6 @@ class RestaurantTest {
         Mockito.when(spiedRestaurant.getCurrentTime()).thenReturn(LocalTime.parse("11:00:00"));
         boolean open = spiedRestaurant.isRestaurantOpen();
         assertTrue(open);
-        Mockito.verify(spiedRestaurant).getCurrentTime();
-
     }
 
     @Test
